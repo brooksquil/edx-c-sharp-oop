@@ -1,0 +1,46 @@
+Intro to Object Oriented Programming in C#
+
+Classes - allow creation of custom, self-contained, reuasable types. Blueprint of type.
+
+Interfaces - enable definition of a set of in puts and output which classes must implement to ensure compatibility with consumers of classes
+
+Declaring a class:
+
+    public class DrinksMachine
+    {
+        // Methods, fields, properties, and events go here.
+    }
+
+Adding members to a class:
+
+You would use fields and properties to define the characteristics of a drinks machine, such as the make, model, age, and service interval of the machine. You would create methods to represent the things that a drinks machine can do, such as make an espresso or make a cappuccino. Finally, you would define events to represent actions that might require your attention, such as replacing coffee beans when the machine has run out of coffee beans.
+
+Within your class, you can add methods, fields, properties, and events to define the behaviors and characteristics of your type, as shown in the following example:
+
+    //Defining class memberspublic class DrinksMachine
+    {
+         // The following statements define a property with a private fields
+         private string _location;
+         public string _location
+         {
+             get
+             {
+                 return _loaction;
+             }
+             set
+             {
+                 if (value != null)
+                    -location = value;
+             }
+         }
+         // The following statements define properties
+         public string Make {get;set;}
+         public string Model {get; set;}
+         // The following statements define methods
+         public void MakeCappucino()
+         {
+             // Method logic goes here
+         }
+         // The following statement defines the event. the delegate definition is not shown
+         public event OutOfBeansHandler OutOfBeans
+    }
