@@ -1,0 +1,10 @@
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/bin/Debug/netcoreapp2.0/lab1.deps.json
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/bin/Debug/netcoreapp2.0/lab1.runtimeconfig.json
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/bin/Debug/netcoreapp2.0/lab1.runtimeconfig.dev.json
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/bin/Debug/netcoreapp2.0/lab1.dll
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/bin/Debug/netcoreapp2.0/lab1.pdb
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/obj/Debug/netcoreapp2.0/lab1.csproj.CoreCompileInputs.cache
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/obj/Debug/netcoreapp2.0/lab1.AssemblyInfoInputs.cache
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/obj/Debug/netcoreapp2.0/lab1.AssemblyInfo.cs
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/obj/Debug/netcoreapp2.0/lab1.dll
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab1/obj/Debug/netcoreapp2.0/lab1.pdb

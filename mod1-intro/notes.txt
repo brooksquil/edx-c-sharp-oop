@@ -44,3 +44,225 @@ Within your class, you can add methods, fields, properties, and events to define
          // The following statement defines the event. the delegate definition is not shown
          public event OutOfBeansHandler OutOfBeans
     }
+
+Partial Classes - allow splitting the dfinition of class accross multiple fields
+    - enable multiple programmers to work on same class at once
+    - When working with automatically generated source. Visual Studio uses this approach when your application uses Windows Forms, Web service wrapper code, etc. Microsoft recommends that you do not modify the auto-generated code for these components as it could be overwritten when the application is compiled or the project files changed. Instead, you can create another portion of the class, as a partial class with the same name, and make your additions and edits there.
+
+        public partial class DrinksMachine
+        {
+
+            public void MakeCappucino()
+            {
+                // Method logic goes here
+            }
+        }
+
+        public void MakeEspresso()
+
+        {
+            // Method logic goes here
+        }
+
+Instantiating Classes - A class is a blueprint for a type; To use the behaviors and characteristics defined in class an instance of a class which is an object must be instantiated
+
+    // Instantiating a class
+    DrinksMachine dm = new DrinksMachine();
+
+    - creating new object in memory based on drinks type
+    - creating object reference, dm, which refers to new DrinksMachine
+    
+    // Type Inference - alow compiler to deduce typy of object
+    var dm = new DrinksMachine();
+    * use when type is absolutely clear
+
+    After Instantiating - use any members - fields, properties, events defined in class
+
+        // Using Object members
+        var sm = new DrinksMachine();
+        dm.Make = "Fourth Coffee";
+        dm.Model = "Bean Crusher 3000";
+        dm.Age = 2;
+        dm.MakeEspresso();
+
+        - the above uses dot notation
+
+Encapsulation in C# - used to describe accessibility of the members belonging to a class or struct
+
+Private Vs. Public Vs. Protected - 
+- access modifiers which can be applied to class members to control access by other code in the application. 
+- restrict access to members of class
+
+    public - the type is available to any code
+    internal - Not available to code in another assembly
+    private - Only available to code within class that contains it
+    protected - only accessible within calss and by derived class instances
+
+Properties - 
+    - use as part of encapsulation
+    - enable permission of users of the class a means of getting and setting values
+    - Data Hiding -  Properties accomplish while hiding implementation or verification code that you may have written inside the property. For example, you may want to validate a birthdate that has been passed in to ensure it is in the proper format or that it is in the correct range for the application's usage. Setting your member variables to private is known as a form of data hiding. Some also consider data hiding to be part of encapsulation.
+    - an interface to class by exposing members user can trust
+    Properties Declared:
+
+        public class DrinksMachine
+        {
+            // Private member variables
+            private int age;
+            private string make;
+
+            // Public properties
+            puplic int age
+            {
+                get
+                {
+                    return age;
+                }
+                set
+                {
+                    age = value;
+                }
+            }
+            public string Make
+            {
+                get
+                {
+                    return make;
+                }
+                set
+                {
+                    make = value;
+                }
+            }
+
+            // auto-implemented property
+            public string Model { get; set; }
+
+                // constructors
+            public DrinksMachine(int age)
+            {
+                this.age = age;
+            }
+            public DrinksMachine(string make, string model)
+            {
+                this.make = make;
+                this.model = model;
+            }
+            public DrinksMachine(int age, string make, string model)
+            {
+                this.Age = age;
+                this.Make = make;
+                this.Model = model;
+            }
+        }
+
+        * The properties are Age, Make, Model backed by private variables called age, make, model
+    
+    Property Types - Two basic read only, read-written
+        - get - returns property value
+        - set - assigns a new value *omitting this property = read only
+        - value - defines value being assigned to the set accessor
+        - for simple props that require no custom accessor code, consider the option of using auto-implemeted props
+            - auto-implemented properties make property declaration more concise when creating simple accessor methods (getter and setter)
+            - enable client code to create objects
+            - will automatically create private, anonymous field in the background that can only bet accessed through get or set
+
+                // auto-implemented Properties
+                public double TotalPurchases { get; set; }
+                public string Name { get; set; }
+                public int customerID { get; set; }
+
+    Constructors - when you instantiate a class, you are actually calling a special method called a constructor. A constructor is a method in the class that has the same name as the class. Constructors do not use a return value however, not even void, and they must have the same name as the class file.
+        - Constructors are often used to specify initial or default values for data members within the new object
+
+        // Adding class DrinksMachine
+        public class DrinksMachine
+        {
+            public int Age { get; set; }
+            public DrinksMachine()
+            {
+                Age = 0;
+            }
+        }
+
+        - default constructor - a constructor that does not take parameters is the 
+        - If you do not include a constructor in your class, the Visual C# compiler will automatically add an empty public default constructor to your compiled class.
+        - If you do not include a constructor in your class, the Visual C# compiler will automatically add an empty public default constructor to your compiled class.
+
+            // Adding Multiple Constructors
+            public class DrinksMachine
+            {
+                public int Age { get; set; }
+                public string Make { get; set; }
+                public string Model { get; set; }
+                public DrinksMachine(int age)
+                {
+                    this.Age = age;
+                }
+                public DrinksMachine(string make, string model)
+                {
+                    this.Make = make;
+                    this.Model = model;
+                }
+                public DrinksMachine(int age, string make, string model)
+                {
+                    this.Age = age;
+                    this.Make = make;
+                    this.Model = model;
+                }
+            }
+
+        * Consumers of your class can use any of the constructors to create instances of your class depending on info available to them
+
+            // Calling Constructors
+            var dm1 = new DrinksMachine(2);
+            var dm2 = new DrinksMachine("Fourth Coffee", "BeanCrusher 3000");
+            var dm3 = new DrinksMachine(3, "Fourth Coffee", "BeanToaster Turbo");
+
+    Creating Static Classes and Methods -
+        - Use if you want to create a class to encapsulate useful functionality rather than to represent an instance of anything        
+            // static classes
+            public static class Conversions
+            {
+                public static double PoundToKilos(double pounds)
+                {
+                    // Convert argument from pounds to kilograms
+                    double kilos = pounds * 0.4536;
+                    return kilos;
+                }
+                public static double KilosToPounds(double kilos)
+                {
+                    // Convert argument from kilograms to pounds
+                    double pounds = kilos * 2.205;
+                    return pounds;
+                }
+            }
+
+            * to call a method on static class you call the method on the class name instead of on the instance name:
+
+                // Calling methods on a static class
+                double weightInKilos = 80;
+                double weightInPounds = Conversions.KilosToPounds(weightInKilos);
+
+        Static Members - 
+        - non-static classes can include static members
+        - useful when behaviors & characteristics relate to the instance (instance members) while some relate to the type itself (static members)
+        - Often used to return data that is common to all instances or to keep track of how many instances of a class have been created
+        - Often used to provide utilities that relate to the type in some way, such as comparison functions
+
+            // Static Members in Non-static Classes
+            public class DrinksMachine
+            {
+                public int Age { get; set; }
+                public string Make { get; set; }
+                public string Model { get; set; }
+                public static int CountDrinksMachines()
+                {
+                    // Add method logic here 
+                }
+            }
+
+        - 
+
+
+
