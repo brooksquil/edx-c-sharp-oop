@@ -1,0 +1,3 @@
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab3/obj/Debug/netcoreapp2.0/lab3.csproj.CoreCompileInputs.cache
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab3/obj/Debug/netcoreapp2.0/lab3.AssemblyInfoInputs.cache
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/lab3/obj/Debug/netcoreapp2.0/lab3.AssemblyInfo.cs
