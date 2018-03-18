@@ -1,0 +1,10 @@
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/bin/Debug/netcoreapp2.0/exercise.deps.json
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/bin/Debug/netcoreapp2.0/exercise.runtimeconfig.json
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/bin/Debug/netcoreapp2.0/exercise.runtimeconfig.dev.json
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/bin/Debug/netcoreapp2.0/exercise.dll
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/bin/Debug/netcoreapp2.0/exercise.pdb
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/obj/Debug/netcoreapp2.0/exercise.csproj.CoreCompileInputs.cache
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/obj/Debug/netcoreapp2.0/exercise.AssemblyInfoInputs.cache
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/obj/Debug/netcoreapp2.0/exercise.AssemblyInfo.cs
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/obj/Debug/netcoreapp2.0/exercise.dll
+/Users/BPC/workspace-c-sharp/edX_c_sharp/edx-c-sharp-oop/mod1-intro/exercise/obj/Debug/netcoreapp2.0/exercise.pdb
