@@ -11,3 +11,6 @@ namespace exercise
 
  }   
 }
+
+// Teacher myTeacher = new Teacher("Tom", "Thumb", DateTime.Now, "1st Ave", " ", "Moncton", "NB", "E1C 4W3", "Canada");
+//newCourse.Teachers[0] = myTeacher;
