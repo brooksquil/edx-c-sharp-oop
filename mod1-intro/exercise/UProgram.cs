@@ -7,7 +7,7 @@ namespace exercise
  public class UProgram
  {
      // Defining Properties
-     public string UProgramName = { get; set; }
-     
+     public string ProgramName = { get; set; }
+
  }   
 }
